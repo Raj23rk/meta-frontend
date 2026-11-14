@@ -46,17 +46,17 @@ export const Login: React.FC = () => {
   return (
     <div className="min-h-screen w-full flex flex-col lg:flex-row bg-slate-900">
       {/* ========================================================= */}
-      {/* LEFT SIDE: Image Section (All text content removed)       */}
+      {/* LEFT SIDE: Image Section                                  */}
       {/* ========================================================= */}
       <div className="relative hidden lg:block lg:w-1/2 xl:w-[52%] overflow-hidden bg-slate-950">
         <img
-          src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=1600&q=80"
-          alt="WhatsApp Customer Messaging"
+          src="/images/login-banner.jpg"
+          alt="WhatsApp Business SaaS Platform"
           className="w-full h-full object-cover"
         />
 
-        {/* Ambient Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-slate-950/40" />
+        {/* Ambient Gradient Vignette */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30 pointer-events-none" />
 
         {/* Minimal Floating Brand Badge */}
         <div className="absolute top-8 left-8 flex items-center space-x-3 bg-slate-950/70 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/10 shadow-xl">
