@@ -11,11 +11,6 @@ import {
   Lock,
   Eye,
   EyeOff,
-  CheckCircle2,
-  CheckCheck,
-  Zap,
-  Sparkles,
-  TrendingUp,
 } from 'lucide-react';
 
 export const Login: React.FC = () => {
@@ -51,132 +46,31 @@ export const Login: React.FC = () => {
   return (
     <div className="min-h-screen w-full flex flex-col lg:flex-row bg-slate-900">
       {/* ========================================================= */}
-      {/* LEFT SIDE: Image, Branding & Feature Showcase (Desktop)   */}
+      {/* LEFT SIDE: Image Section (All text content removed)       */}
       {/* ========================================================= */}
-      <div className="relative hidden lg:flex lg:w-1/2 xl:w-[54%] flex-col justify-between p-10 xl:p-14 overflow-hidden bg-slate-950">
-        {/* Background Image with Dark & Emerald Blend */}
+      <div className="relative hidden lg:block lg:w-1/2 xl:w-[52%] overflow-hidden bg-slate-950">
         <img
-          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1800&q=80"
-          alt="WhatsApp Business Communication"
-          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-luminosity scale-105"
+          src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=1600&q=80"
+          alt="WhatsApp Customer Messaging"
+          className="w-full h-full object-cover"
         />
 
         {/* Ambient Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-slate-950 via-[#0a1626]/95 to-[#04281e]/90" />
-        <div className="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-slate-950/40" />
 
-        {/* Top Header: Brand Identity */}
-        <div className="relative z-10 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center shadow-lg shadow-emerald-500/30">
-              <MessageSquare className="w-6 h-6" />
-            </div>
-            <div>
-              <span className="text-lg font-bold text-white tracking-tight block leading-tight">
-                WhatsApp Business SaaS
-              </span>
-              <span className="text-xs text-slate-400">Meta Cloud API Enterprise Platform</span>
-            </div>
+        {/* Minimal Floating Brand Badge */}
+        <div className="absolute top-8 left-8 flex items-center space-x-3 bg-slate-950/70 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/10 shadow-xl">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center shadow-md shadow-emerald-500/30">
+            <MessageSquare className="w-4 h-4" />
           </div>
-
-          <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-medium">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Meta API v20.0 Live</span>
+          <div>
+            <span className="text-sm font-bold text-white block leading-tight">
+              WhatsApp Business SaaS
+            </span>
+            <span className="text-[11px] text-slate-300">
+              Meta Cloud API Platform
+            </span>
           </div>
-        </div>
-
-        {/* Center Content: Hero & Interactive Showcase Card */}
-        <div className="relative z-10 my-auto py-8 space-y-7">
-          <div className="space-y-3 max-w-xl">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-300 text-xs font-medium">
-              <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Multi-Tenant Client Architecture</span>
-            </div>
-            <h1 className="text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-snug">
-              Transform customer conversations at{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
-                enterprise scale
-              </span>
-              .
-            </h1>
-            <p className="text-sm xl:text-base text-slate-300 leading-relaxed">
-              Broadcast personalized marketing campaigns, manage WhatsApp Cloud API templates, and empower your support
-              team with a unified real-time inbox.
-            </p>
-          </div>
-
-          {/* Floating WhatsApp Live Preview Card */}
-          <div className="relative bg-white/[0.06] backdrop-blur-xl border border-white/15 rounded-2xl p-5 shadow-2xl max-w-lg">
-            {/* Card Header */}
-            <div className="flex items-center justify-between pb-3 border-b border-white/10">
-              <div className="flex items-center space-x-2.5">
-                <div className="w-9 h-9 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold ring-2 ring-emerald-400/30">
-                  WA
-                </div>
-                <div>
-                  <div className="flex items-center space-x-1.5">
-                    <span className="text-xs font-semibold text-white">Broadcast Campaign</span>
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 fill-emerald-400/20" />
-                  </div>
-                  <span className="text-[10px] text-slate-400">Flash Sale • 12,450 Recipients</span>
-                </div>
-              </div>
-              <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-semibold">
-                Delivered
-              </span>
-            </div>
-
-            {/* Chat Bubble Preview */}
-            <div className="mt-3.5 bg-[#005c4b]/80 border border-emerald-500/20 text-white rounded-xl rounded-tl-none p-3 text-xs shadow-md">
-              <p className="text-slate-100 leading-relaxed">
-                🎉 Exclusive Offer: Get 30% off on all products today! Use coupon code <span className="font-bold text-amber-300">WHATSAPP30</span> at checkout.
-              </p>
-              <div className="flex items-center justify-end space-x-1 mt-2 text-[10px] text-emerald-200">
-                <span>Just now</span>
-                <CheckCheck className="w-3.5 h-3.5 text-sky-300" />
-              </div>
-            </div>
-
-            {/* Live Metrics Row */}
-            <div className="grid grid-cols-3 gap-2 mt-4 pt-3 border-t border-white/10 text-center">
-              <div className="bg-white/5 rounded-lg p-2">
-                <div className="text-[10px] text-slate-400">Delivery Rate</div>
-                <div className="text-xs font-bold text-white mt-0.5">99.8%</div>
-              </div>
-              <div className="bg-white/5 rounded-lg p-2">
-                <div className="text-[10px] text-slate-400">Read Rate</div>
-                <div className="text-xs font-bold text-emerald-400 mt-0.5">84.2%</div>
-              </div>
-              <div className="bg-white/5 rounded-lg p-2">
-                <div className="text-[10px] text-slate-400">Avg. Response</div>
-                <div className="text-xs font-bold text-teal-300 mt-0.5">&lt; 15s</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Features List */}
-          <div className="grid grid-cols-3 gap-3 max-w-lg pt-1">
-            <div className="flex items-center space-x-2 text-slate-300 text-xs">
-              <Zap className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Bulk Broadcasts</span>
-            </div>
-            <div className="flex items-center space-x-2 text-slate-300 text-xs">
-              <Headphones className="w-4 h-4 text-teal-400 shrink-0" />
-              <span>Multi-Agent Inbox</span>
-            </div>
-            <div className="flex items-center space-x-2 text-slate-300 text-xs">
-              <TrendingUp className="w-4 h-4 text-sky-400 shrink-0" />
-              <span>Live Analytics</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Footer */}
-        <div className="relative z-10 flex items-center justify-between text-xs text-slate-400 pt-6 border-t border-white/10">
-          <span>Trusted by modern brands across 20+ countries</span>
-          <span>End-to-End Encryption • ISO 27001 Ready</span>
         </div>
       </div>
 
