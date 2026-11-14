@@ -58,20 +58,7 @@ export const Login: React.FC = () => {
         {/* Ambient Gradient Vignette */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30 pointer-events-none" />
 
-        {/* Minimal Floating Brand Badge */}
-        <div className="absolute top-6 left-6 flex items-center space-x-2.5 bg-slate-950/70 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/10 shadow-xl">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center shadow-md shadow-emerald-500/30">
-            <MessageSquare className="w-4 h-4" />
-          </div>
-          <div>
-            <span className="text-xs font-bold text-white block leading-tight">
-              WhatsApp Business SaaS
-            </span>
-            <span className="text-[10px] text-slate-300">
-              Meta Cloud API Platform
-            </span>
-          </div>
-        </div>
+
       </div>
 
       {/* ========================================================= */}
@@ -235,17 +222,15 @@ export const Login: React.FC = () => {
             </div>
           </div>
 
-          {/* Register Link & Footer */}
+          {/* Admin-Managed Account Notice & Footer */}
           <div className="pt-1 space-y-1.5 text-center">
-            <p className="text-xs text-slate-500">
-              Need a new workspace?{' '}
-              <Link to="/register" className="font-semibold text-emerald-600 hover:text-emerald-700 hover:underline">
-                Create Client Account
-              </Link>
-            </p>
+            <div className="inline-flex items-center space-x-1.5 text-xs text-slate-600 bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-1.5 shadow-sm">
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <span>Accounts are created by your Workspace Administrator.</span>
+            </div>
 
             <p className="text-[10px] text-slate-400">
-              Protected by enterprise-grade security and Meta Cloud API protocols.
+              Contact your Administrator to receive your login credentials.
             </p>
           </div>
         </div>

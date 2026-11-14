@@ -22,7 +22,7 @@ export function App() {
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<Navigate to="/login" replace />} />
 
           {/* Super Admin Center */}
           <Route path="/admin" element={<AppLayout />}>

@@ -52,20 +52,7 @@ export const Register: React.FC = () => {
         {/* Ambient Gradient Vignette */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/30 pointer-events-none" />
 
-        {/* Minimal Floating Brand Badge */}
-        <div className="absolute top-6 left-6 flex items-center space-x-2.5 bg-slate-950/70 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/10 shadow-xl">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center shadow-md shadow-emerald-500/30">
-            <MessageSquare className="w-4 h-4" />
-          </div>
-          <div>
-            <span className="text-xs font-bold text-white block leading-tight">
-              WhatsApp Business SaaS
-            </span>
-            <span className="text-[10px] text-slate-300">
-              Meta Cloud API Platform
-            </span>
-          </div>
-        </div>
+
       </div>
 
       {/* ========================================================= */}
